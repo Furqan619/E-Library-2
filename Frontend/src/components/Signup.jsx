@@ -28,7 +28,7 @@ function Signup() {
         // To do that We have to call our API with the help of 'axios'
         // We have to make POST API because we are sending the data
     await axios
-      .post("https://e-library-2-api.vercel.app/user/signup", userInfo)
+      .post("http://e-library-2-api.vercel.app/user/signup", userInfo)
       //bring the API from postman and keep your api in post then ',' we have to store the data into 'userInfo'.
 
       .then((res) => {
