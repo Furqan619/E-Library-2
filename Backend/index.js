@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://e-library-2-api.vercel.app"],
+        origin: [""],
         methods: ["POST", "GET"],
         credentials: true
     }
