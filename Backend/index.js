@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://e-library-2-client.vercel.app/"],
+        origin: ["https://e-library-2-client.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
@@ -20,11 +20,11 @@ app.use(express.json());
 dotenv.config();
 
 //const PORT = process.env.PORT || 4000;
-const URI = process.env.MongoDBURI;
+//const URI = process.env.MongoDBURI;
 
 // connect to mongoDB
 try {
-    mongoose.connect(URI, {
+    mongoose.connect("mongodb+srv://mdfurqan127:2422466@Atlas@cluster0.ngxbq6o.mongodb.net/books_database", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });
