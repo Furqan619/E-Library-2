@@ -12,7 +12,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://e-library-2-api.vercel.app/books");
+        const res = await axios.get("https://e-library-2-api.vercel.app/book");
         // InOrder to show data from json first you have to filter the data using 'filter()' method
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
