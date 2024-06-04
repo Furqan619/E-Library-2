@@ -8,13 +8,12 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 
-app.use(cors(
-    {
-        origin: ["http://e-library-2-client.vercel.app/"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors());
+//    {
+//        origin: ["http://e-library-2-client.vercel.app/"],
+//        methods: ["POST", "GET"],
+//        credentials: true
+//    }
 app.use(express.json());
 
 dotenv.config();
