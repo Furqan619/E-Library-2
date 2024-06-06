@@ -18,7 +18,7 @@ function Course() {
       // Axios is isomorphic (= it can run in the browser and nodejs with the same codebase). 
       // Axios on the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
       try {
-        const res = await axios.get("http://e-library-2-client.vercel.app/book"); //connecting to the PORT = 4001
+        const res = await axios.get("https://e-library-2-client.vercel.app/book"); //connecting to the PORT = 4001
         // mongodb://127.0.0.1/
         console.log(res.data);
         setBook(res.data);
