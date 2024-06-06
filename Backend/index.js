@@ -9,7 +9,7 @@ import userRoute from "./route/user.route.js";
 const app = express();
 
 app.use(cors(
-    {	origin:["https://deploy-mern-1whq.vercel.app"],
+    {	origin:["https://e-library-2-api.vercel.app/"],
 	    methods: ["POST", "GET"],
 	    credentials: true
     }
